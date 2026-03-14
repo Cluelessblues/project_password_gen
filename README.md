@@ -6,7 +6,7 @@
 ## Description:
 
 - Passwords are generated via command line arguments.
-- Generated Password are printed to the terminal screen and rated on its strength.
+- Generated passwords are printed to the terminal screen and rated on its strength.
 - Automatically these passwords are saved to the clipboard.
 - Optionally by typing **yes** after generating the password it can be saved to a csv file.
 
@@ -15,11 +15,12 @@
 
 - Additionally you can import other password-csv files from Google,Firefox, etc into one csv file and import that in your password manger
 
-I had a bit too much fun when making this generator so please use the **help** function to see the different using available for this password manager
+I had a bit too much fun when making this generator so please use the **help** function to see the different uses available for this password manager:
 
 ```
 python project.py -help
 ```
+
 ---
 
 ## Journey:
@@ -29,7 +30,7 @@ I decided for my project to make a password generator due to my recent interest 
 This project is partially inspired by [Proton-Pass](https://proton.me/pass) (My current password manager).
 When I was navigating through the website I saw you can import csv files from firefox, google, etc.
 There is  also a feature to randomly generate passwords based on specific criteria. 
-Based on these features I wanted to created a password generator in python that was capable of doing the same thing and more.
+Based on these features I wanted to create a password generator in python that was capable of doing the same thing and more.
 
 Initially the project was written using the random module as its randomness backbone. After some research I released the random module is pseudorandom and was not truly random which is not secure.
 Upon this discovery the **random module** was then switched to the **secrets module** to ensure that these were truly secure and random passwords.
@@ -46,5 +47,7 @@ I also wanted these command line arguments to be modular where users can enter -
 
 Using the tabulate library I added a function to present the csv file in a nice table for the user.
 Alongside that I added functionality so the user can clear the csv file.
+
+The code is not perfect but it works. If you see any improvements that can be made, feel free to let me know
 
 
